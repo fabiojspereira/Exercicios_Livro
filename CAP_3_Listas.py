@@ -1,3 +1,45 @@
+localidades = ["Inglaterra","Estados Unidos","Maldivas","Japão","Egito"]
+print("\033[1;34mOrdem original das localidades :\n",localidades,"\033[m")
+
+print("\nLista organizada com SORTED() :\n",sorted(localidades))
+print("\nLista original exibida :\n",localidades)
+print("\nLista organizada com SORTED() e invertida através de parametro :\n",sorted(localidades, reverse=True))
+print("\nLista original exibida :\n",localidades)
+
+localidades.reverse()
+print("\nLista organizada com função REVERSE() :\n",localidades)
+
+localidades.reverse()
+print("\nLista organizada com função REVERSE() novamente, voltando ao normal :\n",localidades)
+
+localidades.sort()
+print("\nLista organizada com SORT() :\n",localidades)
+
+localidades.sort(reverse=True)
+print("\nista organizada com SORT() em modo REVERSO=TRUE :\n",localidades)
+
+
+"""
+carros = ["bmw","audi","toyota","subaru","volvo","mercedes"]
+print("Lista Normal :\n",carros)
+print("\nOrdenados via SORTED() :\n",sorted(carros))
+print("\nExibindo mais uma vez a lista ORIGINAL sem alteração :\n",carros)
+#carros.sort()
+#print("\nOrdenados via SORT() :\n",carros)
+carros.reverse()
+print("\nUsando REVERSE(), inverte as posições sem colocar em ordem alfabética :\n",carros)
+
+carros.sort(reverse=True)
+print("\nLista organizada com SORT() em modo REVERSO=TRUE :\n",carros)
+
+carros.sort(reverse=False)
+print("\nInversa duas vezes e volta ao original em ordem  :\n",carros)
+
+print("\nLista final após as modificações :\n",carros)
+
+print("\nExibindo o tamanho da lista de carros :",len(carros),"carros(s) cadastrados na lista")
+
+
 
 lista_convidados = ["Jhony","Nilza","Fabiola"]
 print("Seja bem vindo ao jantar " + lista_convidados[0] + ".")
@@ -52,7 +94,6 @@ print(lista_convidados)
 
 
 
-"""
 lista_bicicletas = ["trek","trek","trek","cannondale","trek","redline","specialized","trek"]
 print(lista_bicicletas)
 soma = 0
