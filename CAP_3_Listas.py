@@ -1,3 +1,8 @@
+a = 100%10
+print(a)
+
+
+"""
 localidades = ["Inglaterra","Estados Unidos","Maldivas","Japão","Egito"]
 print("\033[1;34mOrdem original das localidades :\n",localidades,"\033[m")
 
@@ -19,7 +24,7 @@ localidades.sort(reverse=True)
 print("\nista organizada com SORT() em modo REVERSO=TRUE :\n",localidades)
 
 
-"""
+
 carros = ["bmw","audi","toyota","subaru","volvo","mercedes"]
 print("Lista Normal :\n",carros)
 print("\nOrdenados via SORTED() :\n",sorted(carros))
