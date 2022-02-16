@@ -1,8 +1,28 @@
-a = 100%10
-print(a)
+
+lista_magicos = ["Mister M","Mister Z","Engolidor de Espadas","Harry Houdini"]
+for magicos in lista_magicos:
+	print(magicos)
+
+
 
 
 """
+lista = ["a","b","c"]
+print(lista)
+lista.pop()
+print(lista)
+lista.append("d")
+print(lista)
+lista.remove(lista[0])
+print(lista)
+lista.append("e")
+lista.append("a")
+lista.append("c")
+print(sorted(lista))
+print(sorted(lista, reverse=True))
+print(lista)
+
+
 localidades = ["Inglaterra","Estados Unidos","Maldivas","Japão","Egito"]
 print("\033[1;34mOrdem original das localidades :\n",localidades,"\033[m")
 
