@@ -1,12 +1,3 @@
-
-lista_magicos = ["Mister M","Mister Z","Engolidor de Espadas","Harry Houdini"]
-for magicos in lista_magicos:
-	print(magicos)
-
-
-
-
-"""
 lista = ["a","b","c"]
 print(lista)
 lista.pop()
@@ -171,4 +162,3 @@ print("Ultimo item que foi apagado :",poped_item)
 
 lista_bicicletas.remove("caloi")
 print(lista_bicicletas)
-"""
