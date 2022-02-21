@@ -1,3 +1,31 @@
+lista_de_comidas = ("feijão","arroz","macarrão","ovo","suco") # TUPLA DE COMIDAS
+print(f"Cardápio padrão : {lista_de_comidas}")
+for comida in lista_de_comidas:
+    print(comida)
+
+#lista_de_comidas[4] = "doce"
+#print(lista_de_comidas)
+
+lista_de_comidas = ("feijão","arroz","macarrão","carne","doce") # TUPLA DE COMIDAS
+print(f"\nCardápio atualizado : {lista_de_comidas}")
+for comida in lista_de_comidas:
+	print(comida)
+
+
+tupla = tuple()
+
+tupla = (10,20)
+print(tupla)
+
+print(tupla[0])
+print(tupla[1])
+
+tupla = (100,500)
+print(tupla)
+print(tupla[0])
+print(tupla[1])
+
+
 lista_pecas = ["ssd","hdd","monitor","vga","cpu","fonte","memória ram"]
 print("LISTA COMPLETA : ", lista_pecas)
 print("\nOs três primeiros itens de hardware são : ", lista_pecas[0:3])
@@ -20,7 +48,6 @@ for contador in hardware_copiado[:]:
 	print(contador,end=" ")
 
 
-"""
 jogadores = ["romário","edmundo","mauro galvão","bebeto","ronaldo"]
 #print(jogadores[-3:])
 print("Aqui vem a lista dos 3 primeiros jogadores da lista :")
@@ -118,4 +145,3 @@ for magicos in lista_magicos:
 	print("Estamos prontos para o seu próximo truque, "+ magicos.title()+" !!!\n")
 
 print("Obrigado a todos pela presença !!")
-"""
