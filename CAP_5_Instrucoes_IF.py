@@ -1,3 +1,63 @@
+lista_de_ingredientes_solicitados = ["tomate","nutela","bacon","oregano","mussarela","camarao","azeitona","milho","calabresa"]
+for ingredientes in lista_de_ingredientes_solicitados:
+	print(f"{ingredientes} foi adicionado a sua pizza !")
+
+
+frutas_favoritas = ["maçã","banana","uva","laranja"]
+
+if "laranja" in frutas_favoritas:
+	print("Laranja está na lista de favoritas !")
+
+if "maçã" in frutas_favoritas:
+	print("Maçã está na lista de favoritas !")
+
+if "tangerina" in frutas_favoritas:
+	print("Tangerina está na lista de favoritas !")
+
+
+
+alien_color = "red"
+
+if alien_color == "green":
+	print("Você acertou um alienigena da cor verde ! 5 pontos. ")
+
+elif alien_color == "yellow":
+	print("Você acertou um alienigena da cor amarelo ! 10 pontos. ")
+
+else:
+	print("Você acertou um alienigena da cor vermelha ! 15 pontos. ")
+
+
+idade = int(input("BEM VINDO AO PARQUE PYTHON. DIGITE SUA IDADE : "))
+
+if idade < 4:
+	entrada = 0
+	#print("Sua entrada custa : R$0,00")
+elif idade >= 4 and idade <= 18:
+	entrada = 5
+	#print("Sua entrada custa : R$5,00")
+
+elif idade < 65:
+	entrada = 10
+
+elif idade >= 65:
+	entrada = 5
+
+#else:
+	#entrada = 5
+	#print("Sua entrada custa : R$10,00")
+
+print(f"Sua entrada no parque custara {entrada} reais")
+
+
+usuarios_banidos = ["vitor","mauro","freitas"]
+usuario = "fabio"
+
+if usuario not in usuarios_banidos:
+	print(f"{usuario.title()},você pode fazer postagens normalmente !")
+
+
+
 lista_carros = ["audi","bmw","subaru","toyota"]
 
 carro = "subaru"
