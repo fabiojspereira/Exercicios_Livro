@@ -14,6 +14,7 @@ print(sorted(lista, reverse=True))
 print(lista)
 
 
+
 localidades = ["Inglaterra","Estados Unidos","Maldivas","Japão","Egito"]
 print("\033[1;34mOrdem original das localidades :\n",localidades,"\033[m")
 
