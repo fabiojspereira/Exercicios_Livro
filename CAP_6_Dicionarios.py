@@ -1,4 +1,189 @@
 """
+jhony = {
+	"tipo_animal":"cachorro",
+	"nome_do_dono":"fabio"
+	}
+
+fred = {
+	"tipo_animal": "cachorro",
+	"nome_do_dono": "maria"
+	}
+
+cuca = {
+	"tipo_animal": "gato",
+	"nome_do_dono": "felipe"
+	}
+
+pets = [ jhony, fred, cuca ]
+
+for animal in pets:
+	print()
+	print(f"{'ESPÉCIE DO ANIMAL':<20}{':':<2}{animal['tipo_animal'].title()}")
+	print(f"{'NOME DO DONO':<20}{':':<2}{animal['nome_do_dono'].title()}")
+
+
+
+pessoa_001 = {
+	"primeiro_nome": "fabio",
+	"segundo_nome": "pereira",
+	"idade": "41",
+	"cidade": "joão pessoa",
+	"endereco": "pedro firmino do nascimento 454 - apt 301"
+	}
+
+pessoa_002= {
+	"primeiro_nome": "priscila",
+	"segundo_nome": "lourenco",
+	"idade": "37",
+	"cidade": "joão pessoa",
+	"endereco": "pedro firmino do nascimento 454 - apt 301"
+	}
+
+pessoa_003 = {
+	"primeiro_nome": "jhony",
+	"segundo_nome": "bravo",
+	"idade": "12",
+	"cidade": "joão pessoa",
+	"endereco": "pedro firmino do nascimento 454 - apt 301"
+	}
+
+lista_pessoas = [ pessoa_001, pessoa_002, pessoa_003 ]
+for pessoa in lista_pessoas:
+	print()
+	print(f"{'NOME':<15}{':':<2}{pessoa['primeiro_nome'].title()}")
+	print(f"{'SOBRENOME':<15}{':':<2}{pessoa['segundo_nome'].title()}")
+	print(f"{'IDADE':<15}{':':<2}{pessoa['idade'].title()}")
+	print(f"{'CIDADE':<15}{':':<2}{pessoa['cidade'].title()}")
+	print(f"{'ENDEREÇO':<15}{':':<2}{pessoa['endereco'].title()}")
+
+
+
+
+usuarios = {
+	"0001":{
+		"nome":"fabio",
+		"sobrenome":"pereira",
+		"localidade":"brasil"
+		},
+
+	"0002":{
+		"nome":"priscila",
+		"sobrenome":"lourenco",
+		"localidade":"brasil"
+		}
+	}
+
+
+for user_name, user_info in usuarios.items():
+	print(f"\n{'USUÁRIO':<15}{':':<2}{user_name}")
+	print(f"{'NOME COMPLETO':<15}{':':<2}{user_info['nome'].title() + ' ' + user_info['sobrenome'].title()}")
+	print(f"{'LOCALIDADE':<15}{':':<2}{user_info['localidade'].title()}")
+
+
+
+linguagens_favoritas = {
+	"fabio": ["python", "c++", "visual basic"],
+	"mario": ["python"],
+	"carlos": ["html"],
+	"pereira": ["pascal"],
+	"jhony": ["pascal"],
+	"jorge": ["python", "pascal"],
+	"roberto": ["c"],
+	"priscila": ["html"],
+	"roger": ["ruby"],
+	"fred": ["python"]
+}
+
+#for chave, valor in linguagens_favoritas.items():
+#	print(f"As linguagens favoritas de \033[1;34m{chave.title()}\033[m são :\n {valor}\n")
+
+for chave, valor in linguagens_favoritas.items():
+	if len(valor) > 1:
+		print(f"As linguagens favoritas de \033[1;34m{chave.title()}\033[m são :")
+		for linguagens in valor:
+			print(linguagens,end=" ")
+			print()
+	else:
+		print(f"\nA linguagem {linguagens} é a única linguagem favorita de \033[1;34m{chave.title()}\033[m")
+
+
+
+pizza = {"massa":"grossa", "ingredientes":["queijo", "tomate", "camarao"]}
+print(f"Foi feito o pedido de uma pizza com massa \033[1;34m{pizza['massa']}\033[m e com os seguintes ingredientes :")
+
+for ingredientes in pizza["ingredientes"]:
+	print(ingredientes)
+
+
+
+alienigenas = list()
+
+for alien in range(30):
+	valores = {"cor":"verde", "pontos":5, "velocidade":"lento"}
+	alienigenas.append(valores)
+
+for contador in range(5):
+	print(f"{contador+1} - {alienigenas[contador]}")
+print(f"Total de alienígenas criados : {len(alienigenas)}\n")
+
+for contador in range(0, 3, 1):
+	alienigenas[contador] = {"cor":"amarelo", "pontos":10, "velocidade":"normal"}
+
+for contador in range(5):
+	print(f"{contador+1} - {alienigenas[contador]}")
+print(f"Total de alienígenas criados : {len(alienigenas)}\n")
+
+print("NOVAS INSTRUÇÕES")
+for alien in alienigenas[5:10]:
+	if alien["cor"] == "verde":
+		alien["cor"] = "branco"
+		alien["pontos"] = 50
+		alien["velocidade"] = "ultra"
+
+for contador in range(15):
+	print(f"{contador+1} - {alienigenas[contador]}")
+print(f"Total de alienígenas criados : {len(alienigenas)}\n")
+
+
+
+alien_0 = {"cor":"verde", "ponto":"5"}
+alien_1 = {"cor":"amarelo", "ponto":"10"}
+alien_2 = {"cor":"vermelho", "ponto":"15"}
+
+alienigenas = [alien_0,alien_1,alien_2]
+
+for x in alienigenas:
+	print(x)
+
+
+
+linguagens_favoritas = {
+	"fabio": "python",
+	"mario": "python",
+	"carlos": "html",
+	"pereira": "pascal",
+	"jhony": "pascal",
+	"jorge": "python",
+	"roberto": "c",
+	"priscila": "html",
+	"roger": "ruby",
+	"fred": "python"
+}
+
+lista = list()
+lista_002 = ["fabio","pereira"]
+print(lista)
+lista.append(linguagens_favoritas.copy())  # forma de alimentar uma LISTA com dicionários.
+lista.append(linguagens_favoritas.copy())  # forma de alimentar uma LISTA com dicionários.
+lista.append(linguagens_favoritas.copy())  # forma de alimentar uma LISTA com dicionários.
+
+print(lista)
+print(len(lista))
+print(lista_002)
+print(len(lista_002))
+
+
+
 lista_pessoas = [
 	"fabio","mario","jorge","souza","carlos",
 	"pereira","priscila","lourenco","flavio",
