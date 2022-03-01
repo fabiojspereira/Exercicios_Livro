@@ -1,4 +1,3 @@
-"""
 cidades = {
 	"rio de janeiro": {"pais": "Brasil", "pop": "6 milhões", "nível de violência": "alto"},
 	"joao pessoa": {"pais": "Brasil", "pop": "900 mil", "nível de violência": "baixo"},
@@ -424,4 +423,3 @@ print(alien_0)
 print("Agora o alien mudou de cor !!")
 alien_0["cor"] = "branco"
 print(alien_0)
-"""
