@@ -1,4 +1,56 @@
 """
+cidades = {
+	"rio de janeiro": {"pais": "Brasil", "pop": "6 milhões", "nível de violência": "alto"},
+	"joao pessoa": {"pais": "Brasil", "pop": "900 mil", "nível de violência": "baixo"},
+	"campina grande": {"pais": "Brasil", "pop": "300 mil", "nível de violência": "médio"}
+	}
+
+for cidade, info_cidade in cidades.items():
+	pais = info_cidade['pais']
+	populacao = info_cidade['pop']
+	violencia = info_cidade['nível de violência']
+
+	print(f"\nCidade : {cidade.title()}")
+	print(f"País : {pais.title()}")
+	print(f"População : {populacao}")
+	print(f"Nível de violência : {violencia}")
+
+
+#for chave, valor in cidades.items():
+#	print(f"\nNome da cidade : {chave}")
+#	print(f"País : {valor['pais']}")
+#	print(f"População : {valor['pop']}")
+#	print(f"Nível de violência : {valor['nível de violência']}")
+
+
+
+numeros_favoritos = {
+	"fabio": [9, 10],
+	"priscila":[1, 7, 100, 500],
+	"jhony":[12],
+	"pereira":[500, 1000, 0]
+	}
+
+for chave, valor in numeros_favoritos.items():
+	print(f"\nOs numeros favoritos de {chave.title()} são :")
+	for numeros in valor:
+		print(f"{numeros}")
+
+
+
+lugares_favoritos = {
+	"fabio": ["egito","joao pessoa", "eua"],
+	"priscila": ["argentina", "egito", "europa"],
+	"jhony": ["cama", "cambuca de comida", "colo do papai e mamae"]
+	}
+
+for pessoa, lugar in lugares_favoritos.items():
+	print(f"\n{pessoa.title()}, gosta dos seguintes lugares :")
+	for nome_do_lugar in lugar:
+		print(f"{nome_do_lugar}")
+
+
+
 jhony = {
 	"tipo_animal":"cachorro",
 	"nome_do_dono":"fabio"
