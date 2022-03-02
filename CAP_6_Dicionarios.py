@@ -34,7 +34,6 @@ for cidade, info_cidade in cidades.items():
 	print(f"População : {populacao}")
 	print(f"Nível de violência : {violencia}")
 
-
 #for chave, valor in cidades.items():
 #	print(f"\nNome da cidade : {chave}")
 #	print(f"País : {valor['pais']}")
