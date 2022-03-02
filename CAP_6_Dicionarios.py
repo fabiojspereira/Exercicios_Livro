@@ -1,3 +1,23 @@
+lista_de_chaves = []
+
+alien_0 = {"cor": "verde", "pontos": 5}
+print(alien_0)
+print(alien_0["cor"])
+print(alien_0["pontos"])
+print()
+
+x = alien_0.keys()
+print(x)
+
+for x in alien_0.keys():
+	lista_de_chaves.append(x)
+
+print(f"\nLISTA DE CHAVES : {lista_de_chaves}")
+print(f"CHAVE 1 por exemplo : {lista_de_chaves[0]}")
+print(f"CHAVE 1 por exemplo : {lista_de_chaves[1]}")
+
+
+
 cidades = {
 	"rio de janeiro": {"pais": "Brasil", "pop": "6 milhões", "nível de violência": "alto"},
 	"joao pessoa": {"pais": "Brasil", "pop": "900 mil", "nível de violência": "baixo"},
