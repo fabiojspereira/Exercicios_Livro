@@ -1,4 +1,121 @@
-"""
+lista_sanduiche_pedidos = [
+	'pastrami', 'veggie', 'grilled cheese',
+	'pastrami', 'turkey', 'roast beef', 'pastrami'
+	]
+
+lista_sanduiches_prontos = []
+
+print(f"ESTAMOS SEM SANDUÍCHE DE {'pastrami'.upper()}")
+
+for sanduiche in lista_sanduiche_pedidos:
+	if sanduiche == "pastrami":
+		lista_sanduiche_pedidos.remove("pastrami")
+
+while lista_sanduiche_pedidos:
+	sanduiche = lista_sanduiche_pedidos.pop()
+	print(f"Preparei seu sanduíche : \033[1;34m{sanduiche}\033[m")
+	lista_sanduiches_prontos.append(sanduiche)
+
+print(f"\nLISTA DE SANDUÍCHES PREPARADOS :\n{lista_sanduiches_prontos}")
+
+
+
+lista_sanduiche_pedidos = ["x-burguer trio","egg-burguer","picanha-burguer","big bob","big mac cheddar"]
+lista_sanduiches_prontos = []
+
+#for sanduiche in lista_sanduiche_pedidos:
+#	print(f"Preparei seu sanduíche : \033[1;34m{sanduiche}\033[m")
+#	preparado = sanduiche
+#	lista_sanduiches_prontos.append(preparado)
+
+while lista_sanduiche_pedidos:
+	sanduiche = lista_sanduiche_pedidos.pop()
+	print(f"Preparei seu sanduíche : \033[1;34m{sanduiche}\033[m")
+	lista_sanduiches_prontos.append(sanduiche)
+
+print(f"\nLISTA DE SANDUÍCHES PREPARADOS :\n{lista_sanduiches_prontos}")
+
+
+
+lista = ["A","B","C","D","E","F","G"]
+dic = {}
+
+for x in range(1, len(lista)+1):
+	dic[lista[x-1]] = x
+
+print(dic.keys())
+print(dic.values())
+
+print()
+print(dic)
+print()
+
+dic["A"] = "fabio"
+dic["A"]
+
+for chave, valor in dic.items():
+	print(f"CHAVE : {chave}       VALOR : {valor}")
+
+
+
+lista_de_resposta = {}
+
+check_001 = True
+
+while check_001 == True:
+	nome = input(f"Qual o seu nome ? ")
+	resposta = input(f"Qual sua cor favorita {nome.title()} ? ")
+
+	lista_de_resposta[nome] = resposta
+
+	continua_001 = input("Deseja continuar o cadastro ? [sim / nao]")
+	if continua_001 == "nao":
+		check_001 = False
+	else:
+		check_001 = True
+
+print(f"\nRESULTADOS :")
+
+for chave, valor in lista_de_resposta.items():
+	print(f"A cor favorita de {chave.title()} é {valor.upper()}.")
+
+print(lista_de_resposta)
+
+
+
+usuarios_sem_cadastro = ["priscila","alice","briam","candace","fabio","jhony"]
+usuarios_confirmados = []
+
+print(f"LISTA ORIGINAL : {usuarios_sem_cadastro}\n")
+
+while len(usuarios_sem_cadastro) > 0:
+	user = usuarios_sem_cadastro[-1]
+	usuarios_sem_cadastro.pop()
+	print(f"Lista de usuários após a retirada do último usuário {user} : {usuarios_sem_cadastro}")
+	print(f"Verificando usuário : {user.title()}.")
+	usuarios_confirmados.append(user)
+
+print(f"\nUsuários confirmados :")
+for nome in usuarios_confirmados:
+	print(nome.title())
+
+
+
+usuarios_sem_cadastro = ["alice","briam","candace"]
+usuarios_confirmados = []
+
+
+while usuarios_sem_cadastro:
+	usuario_atual = usuarios_sem_cadastro.pop()
+	print(f"Verificando usuário : {usuario_atual.title()}.")
+	usuarios_confirmados.append(usuario_atual)
+
+print(f"\nUsuários confirmados :")
+for nome in usuarios_confirmados:
+	print(nome.title())
+
+
+
 check_001 = True
 while check_001 == True:
 	print("Digite a idade do consumidor")
@@ -167,4 +284,3 @@ print(mensagem)
 
 name = input("Digite seu nome : ")
 print(f"Olá {name} !")
-"""
