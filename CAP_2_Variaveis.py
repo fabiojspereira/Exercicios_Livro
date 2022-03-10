@@ -1,3 +1,5 @@
+import this
+
 nome = "Fabio"
 print("Olá " + nome + ", você gostaria de aprender um pouco sobre Python hoje ?")
 
