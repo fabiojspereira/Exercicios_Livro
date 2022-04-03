@@ -1,4 +1,40 @@
 """
+def get_formatted_name ( first_name, last_name, middle_name = ""):
+	if middle_name :
+		full_name = first_name + " " + middle_name + " " + last_name
+	else :
+		full_name = first_name + " " + last_name
+
+	return full_name.title()
+
+musician = get_formatted_name("jimi", "handrix")
+print(musician)
+
+musician = get_formatted_name("john", "lee", "hooker")
+print(musician)
+
+
+
+
+def get_formatted_name ( first_name, middle_name,  last_name):
+	full_name = first_name + " " + middle_name + " " + last_name
+	return full_name.title()
+
+musician = get_formatted_name("john", "lee", "hooker")
+
+print(musician)
+
+
+
+def get_formatted_name ( first_name, last_name):
+	full_name = first_name + " " + last_name
+	return full_name.title()
+
+musician = get_formatted_name("jimi", "handrix")
+
+print(musician)
+
+
 def descreva_cidade(nome, pais="brasil"):
 	print(f"\nA cidade de {nome.title()} está localizada no país {pais.title()} ")
 
