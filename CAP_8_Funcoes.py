@@ -1,4 +1,61 @@
 """
+def build_person(first_name, last_name, age=""):
+	person = {"first":first_name, "last":last_name}
+	if age:
+		person["age"] = age
+	return person
+
+musician = build_person("jimi", "hendrix", age = 42 )
+print(musician)
+print()
+musician = build_person("jimi", "hendrix")
+print(musician)
+print()
+musician = build_person("jimi", "hendrix", 42)
+print(musician)
+
+
+
+def build_person(first_name, last_name):
+	person = {"first":first_name, "last":last_name}
+	return person
+
+
+dicionario = dict()
+lista = list()
+
+for contador in range(1,4):
+	print(f"Execução {contador}")
+	dicionario = build_person("fabio" + str(contador), "pereira" + str(contador))
+	lista.append(dicionario)
+
+print()
+print(f"Dicionário {lista}")
+
+count = 1
+for contador in lista :
+	print(f"ITEM {count} da lista : {contador}")
+	count+=1
+
+
+
+def build_person(first_name, last_name):
+	person = {"first":first_name, "last":last_name}
+	return person
+
+musician = build_person("jimi", "hendrix")
+
+print(musician)
+print(musician.items())
+print(musician.keys())
+print(musician.values())
+print()
+print(musician["first"].title())
+print(musician["last"].title())
+
+
+
+
 def get_formatted_name ( first_name, last_name, middle_name = ""):
 	if middle_name :
 		full_name = first_name + " " + middle_name + " " + last_name
