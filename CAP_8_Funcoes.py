@@ -1,3 +1,77 @@
+"""
+def make_album(cantor, album, trilhas = ""):
+	dicionario_musical = {"nome_cantor": cantor, "nome_album": album}
+
+	if len(trilhas) > 0 :
+		dicionario_musical["qtd_trilhas"] = trilhas
+
+	return (dicionario_musical)
+
+
+exibir_album = make_album("michael jackson", "bad")
+print(exibir_album)
+exibir_album = make_album("queen", "a kind of magic", "9")
+print(exibir_album)
+
+
+
+def make_album(cantor, album, trilhas = 0):
+	if trilhas > 0 :
+		dicionario_musical = {"nome_cantor" : cantor, "nome_album" : album, "qtd_trilhas" : trilhas}
+	else :
+		dicionario_musical = {"nome_cantor" : cantor, "nome_album" : album}
+
+	return (dicionario_musical)
+
+
+exibir_album = make_album("michael jackson", "bad")
+print(exibir_album)
+
+exibir_album = make_album("queen", "a kind of magic", 9)
+print(exibir_album)
+
+
+
+def city_country(cidade, pais):
+	print(cidade.title() + ", " + pais.title())
+
+city_country("joão pessoa", "brasil")
+city_country("rio de janeiro", "brasil")
+
+
+
+def get_formatted_name(first_name, last_name):
+	full_name = first_name + " " + last_name
+	return full_name.title()
+
+while True :
+	print("\nPor favor diga seu nome : ")
+	print("Digite 'quit' para sair a qualquer momento...")
+	f_name = input("Primeiro Nome : ")
+	if f_name == "quit":
+		break
+
+	l_name = input("Último nome : ")
+	if l_name == "quit":
+		break
+
+	formatted_name = get_formatted_name(f_name, l_name)
+	print("\nOlá, " + formatted_name + "!")
+
+
+
+def get_formatted_name(first_name, last_name):
+	full_name = first_name + " " + last_name
+	return full_name.title()
+
+while True :
+	print("\nPor favor diga seu nome : ")
+	f_name = input("Primeiro Nome : ")
+	l_name = input("Último nome : ")
+
+	formatted_name = get_formatted_name(f_name, l_name)
+	print("\nOlá, " + formatted_name + "!")
+
 
 def build_person(first_name, last_name, age=""):
 	person = {"first":first_name, "last":last_name}
@@ -15,7 +89,7 @@ musician = build_person("jimi", "hendrix", 42)
 print(musician)
 
 
-"""
+
 def build_person(first_name, last_name):
 	person = {"first":first_name, "last":last_name}
 	return person
