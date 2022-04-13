@@ -1,4 +1,34 @@
+
 """
+def make_album(cantor, album, trilhas = ""):
+
+	dicionario_musical = {"nome_cantor": cantor, "nome_album": album}
+
+	if len(trilhas) > 0 :
+		dicionario_musical["qtd_trilhas"] = trilhas
+
+	return (dicionario_musical)
+
+
+coletanea = {}
+print("\nDigite 'quit' para sair a qualquer momento.")
+
+while True :
+	cantor = input("\nDigite o nome do artista a ser armazenado : ")
+	if cantor == "quit":
+		break
+
+	album = input("Digite o nome do album deste artista : ")
+	if album == "quit":
+		break
+
+	coletanea = make_album(cantor, album)
+	print(coletanea)
+
+print("Obrigado por participar.")
+
+
+
 def make_album(cantor, album, trilhas = ""):
 	dicionario_musical = {"nome_cantor": cantor, "nome_album": album}
 
