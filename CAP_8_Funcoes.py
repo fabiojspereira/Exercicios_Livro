@@ -1,5 +1,54 @@
+def print_models(unprinted_designs, completed_models):
+	while unprinted_designs:
+		current_design = unprinted_designs.pop()
+		print("Printing model : " + current_design)
+		completed_models.append(current_design)
+
+
+def show_completed_models(completed_models):
+	print("\nThe following models have been printed : ")
+	for completed_model in completed_models:
+		print(completed_model)
+
+unprinted_designs = ["iphone case", "robot pedant", "dodecahedron"]
+completed_models = []
+
+print_models(unprinted_designs, completed_models)
+
+show_completed_models(completed_models)
 
 """
+# Começa com alguns designs que devem ser impressos
+unprinted_designs = ["iphone case", "robot pedant", "dodecahedron"]
+completed_models = []
+
+# Simula a impressão de cada design, até que não haja mais nenhum
+# Transfere cada design para completed_models após a impressão
+while len(unprinted_designs) > 0 : # ou while unprinted_designs :
+	current_design = unprinted_designs.pop()
+
+	# Simula a criação de uma impressora 3D a partir do design
+	print("Printing Model : " + current_design + ".")
+	completed_models.append(current_design)
+
+# Exibe todos os modelos finalizados
+print("\nThe following models have been printed : ")
+for completed_model in completed_models:
+	print(completed_model)
+
+
+
+def greet_users(names):
+	for name in names :
+		msg = "hello, " + name.title() + "!"
+		print(msg)
+
+username = ["fabio", "jorge", "pereira"]
+
+greet_users(username)
+
+
+
 def make_album(cantor, album, trilhas = ""):
 
 	dicionario_musical = {"nome_cantor": cantor, "nome_album": album}
@@ -10,7 +59,7 @@ def make_album(cantor, album, trilhas = ""):
 	return (dicionario_musical)
 
 
-coletanea = {}
+#coletanea = {}
 print("\nDigite 'quit' para sair a qualquer momento.")
 
 while True :
