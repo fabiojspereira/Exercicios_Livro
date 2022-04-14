@@ -1,5 +1,64 @@
+def make_great(lista_de_magicos):
+	for count in range (0, len(lista_de_magicos)):
+		magico = lista_de_magicos[count]
+		lista_de_magicos[count] = "o Grande " + magico
+	
+	return(lista_de_magicos)
+	
+	
+def show_magicians(lista_de_magicos):
+	for magico in lista_de_magicos:
+		print(magico.title())
+
+magicos = ["david blaine", "teller", "houdini"]
+
+show_magicians(magicos)
+
+grandes_magicos = make_great(magicos)
+print (grandes_magicos)
+
+# ABAIXO SEGUE A SOLUÇÃO DO AUTOR PARA ESCREVER A PALAVRA "o Grande" antes do nome do mágico :
+
+
+
 
 """
+def show_magicians(lista_de_magicos):
+	for magico in lista_de_magicos:
+		print(magico.title())
+
+
+magicos = ["david blaine", "teller", "houdini"]
+
+show_magicians(magicos)
+
+
+
+def print_models(unprinted_designs, completed_models):
+	while unprinted_designs:
+		current_design = unprinted_designs.pop()
+		print("Printing model : " + current_design)
+		completed_models.append(current_design)
+
+
+def show_completed_models(completed_models):
+	print("\nThe following models have been printed : ")
+	for completed_model in completed_models:
+		print(completed_model)
+
+unprinted_designs = ["iphone case", "robot pedant", "dodecahedron"]
+completed_models = []
+
+# Usando [:] na chamada da função, passamos uma cópia da lista "unprinted_designs"
+# E assim a lista original é poupada.
+print_models(unprinted_designs[:], completed_models)
+show_completed_models(completed_models)
+
+print(f"Unprinted Designs : {unprinted_designs}")
+
+
+
+
 def print_models(unprinted_designs, completed_models):
 	while unprinted_designs:
 		current_design = unprinted_designs.pop()
@@ -16,8 +75,9 @@ unprinted_designs = ["iphone case", "robot pedant", "dodecahedron"]
 completed_models = []
 
 print_models(unprinted_designs, completed_models)
-
 show_completed_models(completed_models)
+
+
 
 
 # Começa com alguns designs que devem ser impressos
@@ -28,7 +88,6 @@ completed_models = []
 # Transfere cada design para completed_models após a impressão
 while len(unprinted_designs) > 0 : # ou while unprinted_designs :
 	current_design = unprinted_designs.pop()
-
 	# Simula a criação de uma impressora 3D a partir do design
 	print("Printing Model : " + current_design + ".")
 	completed_models.append(current_design)
