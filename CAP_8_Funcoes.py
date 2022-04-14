@@ -1,3 +1,5 @@
+
+"""
 def print_models(unprinted_designs, completed_models):
 	while unprinted_designs:
 		current_design = unprinted_designs.pop()
@@ -17,7 +19,7 @@ print_models(unprinted_designs, completed_models)
 
 show_completed_models(completed_models)
 
-"""
+
 # Começa com alguns designs que devem ser impressos
 unprinted_designs = ["iphone case", "robot pedant", "dodecahedron"]
 completed_models = []
