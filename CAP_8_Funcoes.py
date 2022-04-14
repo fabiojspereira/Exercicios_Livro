@@ -1,28 +1,55 @@
+
+"""
 def make_great(lista_de_magicos):
-	for count in range (0, len(lista_de_magicos)):
+	for count in range(0, len(lista_de_magicos)):
 		magico = lista_de_magicos[count]
 		lista_de_magicos[count] = "o Grande " + magico
-	
-	return(lista_de_magicos)
-	
-	
+		# Podemos retirar a instrução return e colocar um print : print(lista_de_magicos[count])
+
+	return (lista_de_magicos)
+
 def show_magicians(lista_de_magicos):
 	for magico in lista_de_magicos:
 		print(magico.title())
+
 
 magicos = ["david blaine", "teller", "houdini"]
 
 show_magicians(magicos)
 
 grandes_magicos = make_great(magicos)
-print (grandes_magicos)
+print()
+print(grandes_magicos)
+
 
 # ABAIXO SEGUE A SOLUÇÃO DO AUTOR PARA ESCREVER A PALAVRA "o Grande" antes do nome do mágico :
+def show_magicians(magicians):
+    for magician in magicians:
+        print(magician)
+
+def make_great(magicians):
+    # Build a new list to hold the great musicians.
+    great_magicians = []
+
+    # Make each magician great, and add it to great_magicians.
+    while magicians:
+        magician = magicians.pop()
+        great_magician = magician + ' the Great'
+        great_magicians.append(great_magician)
+
+    # Add the great magicians back into magicians.
+    for great_magician in great_magicians:
+        magicians.append(great_magician)
+
+magicians = ['Harry Houdini', 'David Blaine', 'Teller']
+show_magicians(magicians)
+
+print("\n")
+make_great(magicians)
+show_magicians(magicians)
 
 
 
-
-"""
 def show_magicians(lista_de_magicos):
 	for magico in lista_de_magicos:
 		print(magico.title())
