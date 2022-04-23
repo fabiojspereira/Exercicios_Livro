@@ -1,3 +1,4 @@
+"""
 def make_great(lista_de_magicos):
 	for count in range(0, len(lista_de_magicos)):
 		magico = lista_de_magicos[count]
@@ -19,7 +20,8 @@ grandes_magicos = make_great(magicos)
 print()
 print(grandes_magicos)
 
-"""
+
+
 # ABAIXO SEGUE A SOLUÇÃO DO AUTOR PARA ESCREVER A PALAVRA "o Grande" antes do nome do mágico :
 def show_magicians(magicians):
     for magician in magicians:
